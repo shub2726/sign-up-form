@@ -5,3 +5,16 @@ inputBox.forEach((obj) => {
         else obj.classList.remove("error");
     })}
 )
+
+const pass1 = document.querySelector("#pass_1")
+const pass2 = document.getElementById("pass_2")
+pass2.addEventListener("input", () => {
+    if (pass1.value.localeCompare(pass2.value)) {
+        pass2.classList.add("error");
+        pass2.setCustomValidity("Passwords are not matching.");
+    }
+    else {
+        pass2.classList.remove("error");
+        pass2.setCustomValidity("");
+    }
+})

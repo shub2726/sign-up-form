@@ -14,7 +14,10 @@
     </div>
     <div class="container">
         <div class="image-bar">
-            <img src="./sidebar.jpg">
+            <img src="./images/sidebar.jpg">
+            <div class="card-body">
+                <img src="./images/csea-logo.png">
+            </div>
         </div>
         <div class="content">
             <div class="text-1">
@@ -45,7 +48,7 @@
                     </div>
                     <div class="form_element">
                         <label for="pass_1">PASSWORD</label>
-                        <input type="password" id="pass_1" name="pass_1" required>
+                        <input type="password" id="pass_1" name="pass_1" required title="Please use min. 8 letters, including 1 caps, 1 small and 1 special char./number." pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                     </div>
                     <div class="form_element">
                         <label for="pass_2">CONFIRM PASSWORD</label>

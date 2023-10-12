@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Schoolbell&display=swap');
 
 html {
     height: 100%;
@@ -29,13 +30,33 @@ body {
     align-self: center;
     padding: 0;
     border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .image-bar {
     padding: 0px;
+    position: relative;
+    width: 100%;
 }
 
-img {
+.card-body {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 11.5rem;
+    width: 100%;
+    height: 160px;
+    background-color:rgba(0, 0, 0, 0.355);
+}
+
+.card-body img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+}
+
+.image-bar > img {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-bottom: -4.5px;
@@ -64,7 +85,7 @@ img {
 .text-2 {
     font-family: 'ABeeZee', sans-serif;
     font-style: italic;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .form-container {
@@ -78,13 +99,15 @@ img {
 
 .mand {
     margin-top: -8px;
+    margin-bottom: 8px;
     font-size: 14px;
     font-style: italic;
     align-self: flex-end;
 }
 
 .form-subtext {
-    font-family: 'ABeeZee', sans-serif;
+    font-family: 'Autour One', sans-serif;
+    font-weight: bold;
     font-size: 18px;
 }
 
@@ -102,7 +125,7 @@ form {
 }
 
 .form_element label {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'ABeeZee', sans-serif;
 }
 
@@ -119,6 +142,11 @@ button[type="submit"] {
     border: 0px;
     background-color: black;
     color: white;
+    box-shadow: 5px 5px 5px white;
+}
+
+button[type="submit"] {
+    box-shadow: 5px 5px 2px #92a7e5;
 }
 
 .login:hover, button[type="submit"]:hover {
@@ -132,21 +160,23 @@ input {
     padding: 3px;
     height: 25px;
     border-radius: 5px;
-    border: 2px solid #cecfd1;
+    border: 1.5px solid #cecfd1;
 }
 
 input:focus {
-    border: 2px solid rgb(136, 136, 242);
+    border: 1.5px solid rgb(136, 136, 242);
     outline: none;
     box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.524);
 }
 
 .error {
-    border: 2px solid red;
+    border: 1.5px solid red;
+    background-color: rgba(255, 0, 0, 0.127);
 }
 
 .error:focus {
-    border: 2px solid red;
+    border: 1.5px solid red;
+    background-color: white;
     outline: none;
     box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.524);
 }
