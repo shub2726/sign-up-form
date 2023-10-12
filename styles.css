@@ -48,11 +48,12 @@ img {
     justify-content: center;
     max-width: 500px;
     align-items: center;
+    gap: 1em;
 }
 
 .text-1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     font-family: "Russo One", sans-serif;
     font-weight: bold;
     background: -webkit-linear-gradient(0deg, #5087a5 0%, black 100%);
@@ -61,18 +62,25 @@ img {
 }
 
 .text-2 {
-    margin-top: -1.5em;
     font-family: 'ABeeZee', sans-serif;
     font-style: italic;
     font-size: 22px;
 }
 
 .form-container {
-    padding: 1em;
+    padding: 1em 3.5em;
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.5em;
+    align-items: flex-start;
+}
+
+.mand {
+    margin-top: -8px;
+    font-size: 14px;
+    font-style: italic;
+    align-self: flex-end;
 }
 
 .form-subtext {
@@ -81,15 +89,64 @@ img {
 }
 
 form {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .form_element {
+    gap: 0.1em;
     display: flex;
     flex-direction: column;
 }
 
+.form_element label {
+    font-size: 14px;
+    font-family: 'ABeeZee', sans-serif;
+}
+
 button[type="submit"] {
-    align-self: flex-start;
+    margin: auto;
+}
+
+.login, button[type="submit"] {
+    font-weight: bold;
+    font-family: 'ABeeZee', sans-serif;
+    padding: 0.8em 1em;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: black;
+    color: white;
+}
+
+.login:hover, button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.796);
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+input {
+    padding: 3px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #cecfd1;
+}
+
+input:focus {
+    border: 2px solid rgb(136, 136, 242);
+    outline: none;
+    box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.524);
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.error:focus {
+    border: 2px solid red;
+    outline: none;
+    box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.524);
 }

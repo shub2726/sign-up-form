@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>CSEA | Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="csea-logo.png">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
@@ -15,42 +17,43 @@
             <img src="./sidebar.jpg">
         </div>
         <div class="content">
-            <p class="text-1">
+            <div class="text-1">
                 TO ITERATE IS HUMAN, RECURSION IS DIVINE.
-            </p>
-            <p class="text-2">
-                Sign up now to recurse with us.
-            </p>
+            </div>
+            <div class="text-2">
+                Sign up now and recurse with us.
+            </div>
             <div class="form-container">
                 <div class="form-subtext">Let's do this!</div>
+                <div class="mand">*All fields are mandatory</div>
                 <form action="https://httpbin.org/post" method="post">
                     <div class="form_element">
                         <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name">
+                        <input type="text" id="first_name" name="first_name" required>
                     </div>
                     <div class="form_element">
                         <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name">
+                        <input type="text" id="last_name" name="last_name" required>
                     </div>
                     <div class="form_element">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form_element">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" required>
                     </div>
                     <div class="form_element">
                         <label for="pass_1">PASSWORD</label>
-                        <input type="password" id="pass_1" name="pass_1">
+                        <input type="password" id="pass_1" name="pass_1" required>
                     </div>
                     <div class="form_element">
                         <label for="pass_2">CONFIRM PASSWORD</label>
-                        <input type="password" id="pass_2" name="pass_2">
+                        <input type="password" id="pass_2" name="pass_2" required>
                     </div>
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
-            <button type="submit">Create Account</button>
         </div>
     </div>
 </body>
