@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="./styles.css">
     <title>CSEA | Sign Up</title>
     <link rel="icon" type="image/x-icon" href="./images/csea-logo.png">
-    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="nav-bar">
-        <a href="./login.html" class="login">Log In</a>
+        <a href="./index.html" class="login">Register</a>
     </div>
     <div class="container">
         <div class="image-bar">
@@ -24,22 +23,13 @@
                 TO ITERATE IS HUMAN, RECURSION IS DIVINE.
             </div>
             <div class="text-2">
-                Sign up now and recurse with us.
+                Login now and recurse with us.
             </div>
             <div class="form-container">
                 <div class="form-subtext">Let's do this!</div>
-                <div class="mand">*All fields are mandatory</div>
                 <form action="https://httpbin.org/post" method="post">
                     <div class="form_element">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="first_name" required>
-                    </div>
-                    <div class="form_element">
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="last_name" required>
-                    </div>
-                    <div class="form_element">
-                        <label for="email">EMAIL</label>
+                        <label for="email">EMAIL (or)</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form_element">
@@ -50,11 +40,7 @@
                         <label for="pass_1">PASSWORD</label>
                         <input type="password" id="pass_1" name="pass_1" required title="Please use min. 8 letters, including 1 caps, 1 small and 1 special char./number." pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                     </div>
-                    <div class="form_element">
-                        <label for="pass_2">CONFIRM PASSWORD</label>
-                        <input type="password" id="pass_2" name="pass_2" required>
-                    </div>
-                    <button type="submit">Create Account</button>
+                    <button type="submit">Login</button>
                 </form>
             </div>
         </div>

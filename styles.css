@@ -36,7 +36,7 @@ body {
 .image-bar {
     padding: 0px;
     position: relative;
-    width: 100%;
+    max-width: 280px;
 }
 
 .card-body {
@@ -134,6 +134,7 @@ button[type="submit"] {
 }
 
 .login, button[type="submit"] {
+    text-decoration: none;
     font-weight: bold;
     font-family: 'ABeeZee', sans-serif;
     padding: 0.8em 1em;
