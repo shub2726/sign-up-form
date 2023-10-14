@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 3.5em;
+    gap: 2.5em;
 }
 
 .nav-bar {
@@ -121,12 +121,11 @@ form {
 .form_element {
     gap: 0.1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;font-family: 'ABeeZee', sans-serif;
 }
 
-.form_element label {
+label {
     font-size: 12px;
-    font-family: 'ABeeZee', sans-serif;
 }
 
 button[type="submit"] {
@@ -173,6 +172,7 @@ input:focus {
 .error {
     border: 1.5px solid red;
     background-color: rgba(255, 0, 0, 0.127);
+    transition: 0.3s;
 }
 
 .error:focus {
@@ -180,4 +180,18 @@ input:focus {
     background-color: white;
     outline: none;
     box-shadow: 5px 5px 6px rgba(128, 128, 128, 0.524);
+}
+
+.instead{
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.instead a{
+    color: black;
+    text-decoration-style: wavy;
+}
+
+.instead a:hover {
+    color:rgb(83, 83, 130);
+    transition: 0.3s;
 }
